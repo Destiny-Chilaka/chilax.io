@@ -7,35 +7,32 @@
 
 
 body {
-    background-color: #ec9006 !important;
+    background-color: #e8e8e8 !important;
     font-family: 'Montserrat', sans-serif;
 
 }
 
 /* Nav bar */
 .navbar-nav .my-links {
-    color: #ec9006;
+    color: #444;
     font-size: 1.3rem;
-    letter-spacing: 1px;
-    margin-left: 1.5rem;
-    transition: 0.3s ease-in-out;
-    text-decoration: none;
+    margin-left: 1rem;
+    transition: 0.3s ease-in;
+    text-decoration: none;  
+    padding: 5px 5px;
+    border-radius: 2px;
+
 }
 
 
 .my-links:hover {
     color: #fff;
-    padding: 5px 10px;
-    background-color: #ec9006;
-    border-radius: 7px;
+    padding: 5px 5px;
+    background-color: #444;
+    transition: 0.5s ease-in-out;
+
 }
 
-.my-links:active {
-    color: #fff;
-    padding: 5px 10px;
-    background-color: #fd5e14;
-    border-radius: 7px;
-}
 
 
 .navbar {
@@ -46,31 +43,33 @@ body {
 }
 
 .brand {
-    font-size: 1.5rem;
-    color: #ec9006;
+    color: #444;
+    font-size: 1.8rem;
     text-decoration: none;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out !important;
 }
 
 .brand:hover {
-    color: #fff;
     padding: 5px 10px;
-    background-color: #fd5e14;
     border-radius: 7px;
     text-decoration: none;
+    color: #444 !important;
+    transition: 0.5s ease-in-out !important;
+
 }
 
 /* General styles */
 
 p {
-    color: #fff;
+    color: #000;
     font-size: 1.0rem;
 }
 
-h1,
-h2,
-h3,h4 {
-    color: #fff !important;
+.environment{
+    padding: 15px 7px 2px 7px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 3px;
+    margin-bottom: 7rem;
 }
 
 .input-label {
@@ -79,29 +78,24 @@ h3,h4 {
 }
 
 
-.my-btn {
-    color: #fff;
-    padding: 9px 15px;
-    background-color: #fd5e14;
-    display: inline-block;
-    margin-top: 1.3rem;
+.btn-primary {
+    color: #fff !important;
+    padding: 9px 15px !important;
+    background-color: #444   !important;
+    display: inline-block !important;
+    margin-top: 1.3rem !important;
     text-decoration: none;
-    border: 1px solid #fd5e14;
-    transition: 0.5s ease-in-out;
-    border-radius: 3px;
+    border: 1px solid #444 !important;
+    transition: 0.5s ease-in-out !important;
+    border-radius: 3px !important;
 }
 
-.my-btn:hover {
-    color: #fd5e14;
-    background-color: #fff;
+.btn-primary:hover {
+    background-color: transparent !important;
     text-decoration: none;
+    color: #444 !important;
 
 }
-
-.my-btn:active {
-    color: #f72020;
-}
-
 
 .carousel-control-prev,.carousel-control-next{
     background-color: rgba(255, 255, 255, 0.297) !important;
@@ -119,51 +113,50 @@ h3,h4 {
 
 
 
-/* input */
-.responsive-input {
-    width: 100%;
-    padding: 0.5em;
-}
+/* Inputs */
 
 input {
-    outline: none;
-    border: 1px solid #e5e5e5;
+    outline: none !important;
+    border: 1px solid #999 !important;
     transition: 0.5s ease;
 }
 
-input:focus {
-    border: 1px solid #fd5e14;
-}
+
+
+
+
 
 input[type=submit] {
     cursor: pointer;
 }
 
 textarea {
+    border: 1px solid #999;
     outline: none;
-    border: 1px solid #e5e5e5;
+    border-radius: 4px;
     transition: 0.5s ease;
     width: 100%;
 }
 
-textarea:focus {
-    border: 1px solid #fd5e14;
-
+form{
+    width: 55% !important;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.509);
+    padding: 1.5rem 2rem !important;
+    border-radius: 3px;
+    margin-bottom: 5rem;
 }
-
-
 
 /* About me page */
 
 .my-img {
-    box-shadow: 4px 4px 4px;
     border-radius: 4px;
 }
 
 .about-me {
     background-color:#fff;
     padding: 1rem;
-    box-shadow: 3px 3px 4px;
+    box-shadow: 2px 2px 7px;
     border-radius: 4px;
 }
 
@@ -176,10 +169,10 @@ textarea:focus {
 }
 
 .submit{
-    width: 60%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 1.1rem;
+    width: 60% !important;
+    display: block !important;
+    margin: 0 auto !important;
+    margin-top: 1.1rem !important;
 }
 
 /* project page */
@@ -201,12 +194,12 @@ footer {
 }
 
 footer a {
-    color: #ec9006;
+    color: #444;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #fd5e14;
+    color: #444;
     text-decoration: none;
 }
 
@@ -220,8 +213,13 @@ footer a:hover {
     }
 
     .navbar-nav .my-links:active {
-        background-color: #ec9006;
+        background-color: #444;
 
+    }
+
+    form{
+        width: 80% !important;
+        margin: auto;
     }
 
 }
